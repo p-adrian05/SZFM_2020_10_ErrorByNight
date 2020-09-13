@@ -17,8 +17,10 @@ Az iskola az informatikai szakkör számítógépes logikai játék bázisát sz
 
 # 5. A rendszerre vonatkozó szabályok
 
--
+- A játék Java nyelven, JavaFX segítségével működjön.
+- A játék magyar nyelvű kezelőfelülettel rendelkezzen, ebből adódólag támogasson a magyar nyelvben előforduló karaktereket játékosnév bekérése esetén.
 
 # 6. Követelménylista
 
--
+- Intuitív, bővebb leírást nem igénylő kezelői felület
+- Futtathtó Java-t támogató eszközökön
