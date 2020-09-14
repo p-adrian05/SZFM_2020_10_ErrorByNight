@@ -24,7 +24,16 @@
 
 # 7. Használati esetek
 
--
+Aktorok: _játékos_
+
+Funkciók:
+* játékosok neveinek megadása
+* új játék indítása
+* lépés a játékban
+* játék vége
+* kilépés
+
+<img src="./use_cases/useCases.svg">
 
 # 8. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
