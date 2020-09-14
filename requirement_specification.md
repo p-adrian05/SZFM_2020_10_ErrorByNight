@@ -1,7 +1,7 @@
 # 1. Jelenlegi helyzet
 
 Az SZFM általános iskola informatika szakköre biztosít betekintést az informatika világába bármely korosztály számára.
-Fejleszti a csapatmunkában való hatékony együttműködést, biztosítja a logikus gondolkodás fejlesztését, betekintés nyújt a programozásba, továbbá a kisebb korosztálynak segít elsajátítani a számítógép hatékony használatát is. Ennek köszönhetően az iskola több informatikai versenyben is kiválóan szerepel országos és megyei szinten egyaránt.
+Fejleszti a csapatmunkában való hatékony együttműködést, biztosítja a logikus gondolkodás fejlesztését, betekintés nyújt a programozásba, továbbá a kisebb korosztálynak segít elsajátítani a számítógép hatékony használatát is. Az iskola kiváló pedagógusokat biztosít a szakkör színvonalának fenntartása érdekében, akik mindent megtesznek a tanulók tehetségeinek maximális kiaknázásáért. A foglalkozás folyamán interaktív, egyéni és csoport feladatokat kell elvégezni, zárásként pedig számítógépes logikai játékokkal van lehetőség csoportosan és egyénileg játszani. Ennek köszönhetően az iskola több informatikai versenyben kiválóan szerepel országos és megyei szinten egyaránt.
 
 # 2. Vágyálom rendszer
 
