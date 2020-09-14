@@ -5,7 +5,8 @@ Fejleszti a csapatmunkában való hatékony együttműködést, biztosítja a lo
 
 # 2. Vágyálom rendszer
 
-Az iskola az informatikai szakkör számítógépes logikai játék bázisát szeretné bővíteni egy kétszemélyes logikai játékkal, amely azonnali hozzáférést biztosít regisztráció nélkül, bármilyen operációs rendszeren működik, nem szükséges internet hozzáférés, továbbá felhasználóbarát felülettel rendelkezik. A játék egy táblajáték, amelyen piros és kék korongok vannak, felváltva lehet lépni velük, mindaddig amíg az egyik játékosnak nem sikerül egy sorban három a saját színének megfelelő korongot kirakni.
+Az iskola az informatikai szakkör számítógépes logikai játék bázisát szeretné bővíteni egy kétszemélyes logikai játékkal, amely azonnali hozzáférést biztosít regisztráció nélkül, nem szükséges internet hozzáférés, továbbá felhasználóbarát magyar felülettel rendelkezik. Fontos, hogy Microsoft Windows és Linux operációs rendszereken is működnie kell és asztali alkalmazásnak kell lennie. 
+A játék egy táblajáték, amelyen piros és kék korongok vannak, felváltva lehet lépni velük, mindaddig amíg az egyik játékosnak nem sikerül egy sorban három a saját színének megfelelő korongot kirakni. Opcionális lehetőségként biztosított legyen a játékosok nevének megadása és a játék adott állapotának elmentése a játékosok nevével együtt, amelyet lehetőség legyen betölteni a játék kezdetekor. 
 
 # 3. Jelenlegi üzleti folyamatok
 
