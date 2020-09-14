@@ -10,7 +10,10 @@ A játék egy táblajáték, amelyen piros és kék korongok vannak, felváltva 
 
 # 3. Jelenlegi üzleti folyamatok
 
-Jelenleg az informatikai szakkör számítógépes logikai játék adatbáza kimerül a következő játékokban: dáma, sakk, 2048, torpedó, mahjong, passziánsz, sudoku, bűvös kocka, domino, amőba, backgammon, malom.
+A szakkörök szervezéséről és az oktatás rendjéről az iskolai bizottság rendelkezik. Az iskolai élet bizonyos mértékig uniformizálja az ismereteket. A tanóra keretei nem adnak elég lehetőséget az egyéni érdeklődés kibontakozásához. Ezt az igényt az órán kívüli szervezeti formák — így elsősorban a szakkörök — hivatottak biztosítani! A nevelőtestületek feladata a tanulók minél alaposabb felkészítése az életre. Eme fontos szerep felismeréséből következik, hogy a gyermekek minél nagyobb tömege számára meg kell teremteni a szakköri tagság feltételeit; nem lehet a jó tanulók kiváltsága! A szakkörbe a gyermekek önkéntesen, egyéni hajlamaiknak megfelelően jelentkeznek és nyernek felvételt.
+A szakkörünk a diákokkal megismertetik a szellemi és fizikai munkával, az alkotás örömével. Saját munkájukon, erőfeszítéseiken keresztül meg tudják becsülni mások
+munkáját, eredményeit. Fontos, hogy az aktivitás indítéka, motiválója a közösség szükséglete legyen. Nem mindegy, hogy milyen célokat állítunk a gyermekek elé! Vajon magának készít-e valamit, vagy eszköze a közösséget fogja szolgálni? 
+Az összejövetelek általában kéthetenként két-két órás időtartamúak. Fontos, hogy ezek az összejövetelek ne jelentsenek tanulóinknak nagyobb megterhelést a napi feladatok elvégzése mellett. 
 
 # 4. Igényelt üzleti folyamatok
 
