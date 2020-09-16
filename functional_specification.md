@@ -63,7 +63,19 @@ Funkciók:
 
 # 10. Forgatókönyvek
 
--
+Az alkalmazás megnyitásakor a főképernyő jelenik meg. Ezen a képernyőn jelenik meg a játékban használt tábla, amelyen a korongok kezdetben alul és felül helyezkednek. A tábla felett jelenik meg az éppen lépni következő játékos neve. Továbbá a név mellett, az alkalmazás jobb felső sarkában funkció gombok találhatóak.
+
+##### Lehetőségek:
+
+- Egy korongra kattint a lépni következő játékos a táblán, ekkor megjelennek zöld színnel a táblán azok a helyek, ahova
+  léphet a játékos a választott koronggal.
+- A játék megkezdése előtt beállítható a játékosok nevei egy gomb megnyomásával, ahol egy kis felugró ablakban van erre lehetőség.
+- A játék megkezdése előtt lehetőség van egy régebbi, elmentet játék állapotát megjeleníteni. Egy gomb megnyomására egy új oldal jelenik meg, ahol kiválasztható egy listából egy játék állapot, amely egy név pár és egy dátummal van felcimkézve. Kiválasztást követően visszatér a főképernyőre, ahol az adott játék állapot jelenik meg.
+- A játék folyamán lehetőség van egy gomb segítségével elmenteni az adott játék állását, játékos nevek és táblán
+  lévő korongok helyét.
+- A játék végén megjelenik a győztes neve a tábla felett, majd lehetőség van új játékot indítani egy gomb segítségével, amely kezdőállapotba helyezi a játék táblát és a nevek egy alapértermezett értéket vesznek fel.
+
+Ha egy funkció nem elérhető a játék egy adott állapotában, akkor a funkciót elérő gomb nem kattintható, letiltásra kerül.
 
 # 11. Funkció – követelmény megfeleltetés
 
