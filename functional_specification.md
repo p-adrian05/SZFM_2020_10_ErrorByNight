@@ -8,6 +8,7 @@ a játék menete szerint.
 - Lehetőség biztosítása a jétékosoknak egyedi nevek megadására, ekkor mindkét játékos megadhatja a nevét.
 - Új játék kezdésének biztosítása, ekkor a tábla és a lépni következő jétékos neve is alapértelmezett állapotba kerülnek.
 - Aktuális játék állapotának (játékos nevek és tábla állapota/korongok helye) elmentése.
+- Egy korábban elmentet játék állapotának kitörlése.
 - Egy adott játék állapot betöltése, ennek köszönhetően lehetőség van a játék folytatására az adott állapotból.
 - A játékos tájékoztatása a játék során a megtehető lépések helyeiről a táblán.
 
