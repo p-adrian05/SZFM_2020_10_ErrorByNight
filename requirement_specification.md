@@ -33,4 +33,5 @@ Az összejövetelek általában kéthetenként két-két órás időtartamúak. 
 # 6. Követelménylista
 
 - Intuitív, bővebb leírást nem igénylő kezelői felület
-- Futtathtó Java-t támogató eszközökön
+- Egyszerű, modern megjelenés
+- Magyar nyelvű felület
