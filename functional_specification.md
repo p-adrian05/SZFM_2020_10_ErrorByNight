@@ -56,14 +56,12 @@ Funkciók:
 
 # 8. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
-- Elrendezve 4 kék és 4 piros korong egy 5 × 4 mezőből álló táblán.
-  - 5x4 tábla 4-4 piros/kék korong.
-- Az egyik játékos színe kék, másiké a piros.
-  - Piros/kék korongok a táblán.
+- Elrendezve 4 kék és 4 piros korong egy 5 × 4 mezőből álló táblán. Az egyik játékos színe kék, másiké a piros. 
+  - Új Játék indítása.
 - Felváltva következnek lépni, amely során egy saját színű korongot mozdítanak el egy üres mezőre.
-  - 2 játékos 1-1 lépés.
+  - Lépés a játékban.
 - Egy játékos akkor nyer, ha egymás mellett függőlegesen, vízszintesen vagy átlósan sikerül elhelyezni 3 saját színű korongot.
-  - A nyerő állásba lépett játékos nyer.
+  - A nyerő állásba lépett játékos nyer. Játék vége. 
 - Játékállás mentése a játék menete során.
   - Játékállás mentés.
 - Korábbi elmentett játékállás betöltése.
@@ -71,7 +69,7 @@ Funkciók:
 - Régebbi játékállás törlése.
   - Játékállás törlése.
 - Játékos nevek megadása.
-  - Játékos nevek megadása színenként.
+  - Játékos nevek megadása.
 
 # 9. Képernyő tervek
 
