@@ -60,7 +60,10 @@ Funkciók:
 
 # 9. Képernyő tervek
 
--
+A képernyő tervek [Screen Builder](https://gluonhq.com/products/scene-builder/) segítségével készültek, előzetes megtekintéséhez a Sreen Builder alkalmazással szükséges
+megnyitni a mellékelt fxml fájlokat.
+
+[Képernyő tervek](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/tree/master/screen_plans)
 
 # 10. Forgatókönyvek
 
