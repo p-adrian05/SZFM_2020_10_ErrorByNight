@@ -115,8 +115,10 @@ Ha egy funkció nem elérhető a játék egy adott állapotában, akkor a funkci
 - Egy játékos akkor nyer, ha egymás mellett függőlegesen, vízszintesen vagy átlósan sikerül elhelyezni 3 saját színű korongot.
   - A nyerő állásban az utoljára lépett játékos nyer, neve kiírásra kerül a tábla tetejére.
 - Játékállás mentése és korábbi játékállás betöltése.
-  - Adott játékállás mentése egy listába és a megfelelő állás kiválasztása és betöltése.
+  - Adott játékállás mentése egy listába.
+- Korábbi játékállás betöltése.
+  - Megfelelő állás kiválasztása és betöltése a listából.
 - Régebbi játékállás törlése.
-  - Adott játékállás kiválasztása és törlése a játék állás listából.
+  - Adott játékállás kiválasztása és törlése a listából.
 - Játékos nevek megadása színek szerint.
   - A jétékosok megadják nevüket a megfelelő színhez párosítva.
