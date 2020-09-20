@@ -14,9 +14,13 @@ Játékos -up-> (Játékosok neveinek megadása)
 Játékos -up-> (Kilépés)
 (Játékosok neveinek megadása) .down.> (Új játék indítása)
 Játékos -right-> (Új játék indítása)
+Játékos -left-> (Mentett játék betöltése)
+(Mentett játék betöltése) -down-> (Lépés a játékban)
 Játékos -down-> (Lépés a játékban)
 (Új játék indítása) -down-> (Lépés a játékban)
+(Lépés a játékban) -down-> (Játék mentése)
 (Lépés a játékban) -down-> (Játék vége)
+(Játék mentése) -down-> (Játék vége)
 @enduml
 
 PlantUML version 1.2019.12(Sun Nov 03 10:24:54 UTC 2019)
