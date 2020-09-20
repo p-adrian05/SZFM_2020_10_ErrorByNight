@@ -22,23 +22,23 @@ a játék menete szerint.
 
 # 2. Jelenlegi helyzet leírása
 
--
+[Követelmény specifikáció 1. bekezdés](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/requirement_specification.md)
 
 # 3. Vágyálom rendszer leírása
 
--
+[Követelmény specifikáció 2. bekezdés](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/requirement_specification.md)
 
 # 4. Jelenlegi üzleti folyamatok modellje
 
--
+[Követelmény specifikáció 3. bekezdés](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/requirement_specification.md)
 
 # 5. Igényelt üzleti folyamatok modellje
 
--
+[Követelmény specifikáció 4. bekezdés](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/requirement_specification.md)
 
 # 6. Követelménylista
 
--
+[Követelmény specifikáció 6. bekezdés](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/requirement_specification.md)
 
 # 7. Használati esetek
 
