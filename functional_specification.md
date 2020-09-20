@@ -52,7 +52,7 @@ Funkciók:
 - játék vége
 - kilépés
 
-<img src="./use_cases/useCases.svg">
+<img src="./use_cases/useCase.svg">
 
 # 8. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
