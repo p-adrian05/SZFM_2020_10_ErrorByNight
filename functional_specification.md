@@ -104,4 +104,17 @@ Ha egy funkció nem elérhető a játék egy adott állapotában, akkor a funkci
 
 # 11. Funkció – követelmény megfeleltetés
 
--
+- Elrendezve 4 kék és 4 piros korong egy 5 × 4 mezőből álló táblán.
+  - A játék táblája a megfelelő méretben megjelenik a főképernyőn.
+- Az egyik játékos színe kék, másiké a piros.
+  - Piros és kék színű korongok jelennek meg a táblán, amely a két játékost reprezentálja.
+- Felváltva következnek lépni, amely során egy saját színű korongot mozdítanak el egy üres mezőre.
+  - A jétékosok felváltva lépnek a táblán, a számukra lehetséges mezőkre.
+- Egy játékos akkor nyer, ha egymás mellett függőlegesen, vízszintesen vagy átlósan sikerül elhelyezni 3 saját színű korongot.
+  - A nyerő állásban az utoljára lépett játékos nyer, neve kiírásra kerül a tábla tetejére.
+- Játékállás mentése és korábbi játékállás betöltése.
+  - Adott játékállás mentése egy listába és a megfelelő állás kiválasztása és betöltése.
+- Régebbi játékállás törlése.
+  - Adott játékállás kiválasztása és törlése a játék állás listából.
+- Játékos nevek megadása színek szerint.
+  - A jétékosok megadják nevüket a megfelelő színhez párosítva.
