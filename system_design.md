@@ -26,10 +26,6 @@
 
 -
 
-# 8. Absztrakt domain modell
-
--
-
 # 9. Architekturális terv
 
 -
