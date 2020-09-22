@@ -80,7 +80,7 @@ create table GameState (
 
 # 11. Implementációs terv
 
-<img src="https://raw.githubusercontent.com/p-adrian05/SZFM_2020_10_ErrorByNight/master/diagrams/uml_class_diagram.png" alt="UML diagram">
+<img src="https://raw.githubusercontent.com/p-adrian05/SZFM_2020_10_ErrorByNight/master/documentation/diagrams/uml_class_diagram.png" alt="UML diagram">
 
 
 # 13. Telepítési terv
