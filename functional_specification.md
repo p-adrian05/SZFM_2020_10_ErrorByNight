@@ -12,7 +12,7 @@ a játék menete szerint.
 - Egy adott játék állapot betöltése, ennek köszönhetően lehetőség van a játék folytatására az adott állapotból.
 - A játékos tájékoztatása a játék során a megtehető lépések helyeiről a táblán.
 
-### A rendszer nem cáljai:
+### A rendszer nem céljai:
 
 - Játékosok regisztrálása és beléptető mechanizmus biztosítása.
 - A játékohoz tartozó animációk és reszponzív felhasználói felület biztosítása.
