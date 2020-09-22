@@ -40,7 +40,7 @@
 
 # 11. Implementációs terv
 
--
+<img src="./diagrams/uml_class_diagram.png">
 
 # 12. Tesztterv
 
