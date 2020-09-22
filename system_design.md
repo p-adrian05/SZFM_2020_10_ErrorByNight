@@ -14,9 +14,6 @@ a játék menete szerint.
 - Egy adott játék állapot betöltése, ennek köszönhetően lehetőség van a játék folytatására az adott állapotból.
 - A játékos tájékoztatása a játék során a megtehető lépések helyeiről a táblán.
 
-
-
-
 # 2. A rendszer nem céljai
 
 -
@@ -43,7 +40,24 @@ a játék menete szerint.
 
 # 9. Architekturális terv
 
--
+#### Architekturális tervezési minta
+
+A rendszer tervezési mintája a MVC (Model-View-Controller).
+
+#### Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+
+- A Model komponens az adatokat és a funkcionalitást csomagolja be, független a kimenet
+  ábrázolásmódjától vagy az input viselkedésétől.
+- A View komponensek jelenítik meg az információkat a felhasználónak.
+- A Controller fogadja a bemenetet, melyet szolgáltatáskérésekké alakít a Model vagy a View felé.
+
+#### Változások kezelése
+
+- Egyszerűen kezelhető változások hajthatóak végre, mivel interfészektől vagy absztrakt osztályoktól történik az objektumok függése, nem konkrét implementációktól, ezáltal az implementációk anélkül változtathatóak, hogy hatással lennének más objektumokra.
+
+#### Rendszer bővíthetősége
+
+- A rendszer bővítésre nyitott.
 
 # 10. Adatbázis terv
 
