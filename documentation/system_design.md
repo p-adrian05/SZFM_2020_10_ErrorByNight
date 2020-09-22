@@ -93,4 +93,8 @@ Az alkalmazás eléréséhez, telepítéséhez és futtatásához az alábbi fel
 
 # 14. Karbantartási terv
 
--
+Az alkalmazás jelenlegi és jövőbeli problémamentes használata érdekében folyamatosan frissítjük azt.
+Legyen ez:
+- Bugok javítása
+- További optimalizáció
+- Új kényelmi funkciók bevezetése felhasználói visszajelzések alapján
