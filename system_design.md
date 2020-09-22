@@ -1,6 +1,21 @@
 # 1. A rendszer céljai
 
--
+Felhasználóknak egy asztali alkalmazás biztosítása, amelyet akár két felhasználó is használhat felváltva
+a játék menete szerint.
+
+- Magyar nyelvű felhasználói felület létrehozása.
+- A játék lokális két-játékos módjának megvalósítása.
+- Intuitív, bővebb leírást nem igénylő kezelői felület.
+- Egyszerű, modern megjelenés biztosítása, az egyszerű kezelés céljából.
+- Lehetőség biztosítása a jétékosoknak egyedi nevek megadására, ekkor mindkét játékos megadhatja a nevét (A magyar nyelvben előforduló karakterek támogatásával).
+- Új játék kezdésének biztosítása, ekkor a tábla és a lépni következő jétékos neve is alapértelmezett állapotba kerülnek.
+- Aktuális játék állapotának (játékos nevek és tábla állapota/korongok helye) elmentése.
+- Egy korábban elmentet játék állapotának kitörlése.
+- Egy adott játék állapot betöltése, ennek köszönhetően lehetőség van a játék folytatására az adott állapotból.
+- A játékos tájékoztatása a játék során a megtehető lépések helyeiről a táblán.
+
+
+
 
 # 2. A rendszer nem céljai
 
