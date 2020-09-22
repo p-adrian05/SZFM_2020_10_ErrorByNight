@@ -36,11 +36,26 @@
 
 # 10. Adatbázis terv
 
--
+### Logikai adatmodell:
+
+<img src="./diagrams/db_model.png">
+
+### Fizikai adatmodellt legeneráló SQL szkript:
+
+```sql
+create table GameState (
+        id bigint not null,
+        bluePlayerName varchar(255) not null,
+        created timestamp not null,
+        redPlayerName varchar(255) not null,
+        state varchar(255) not null,
+        primary key (id)
+    )
+```
 
 # 11. Implementációs terv
 
--
+<img src="./diagrams/uml_class_diagram.png">
 
 # 12. Tesztterv
 
