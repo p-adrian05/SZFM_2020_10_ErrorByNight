@@ -36,7 +36,7 @@
 
 # 10. Adatbázis terv
 
--
+<img src="./diagrams/db_model.png">
 
 # 11. Implementációs terv
 
