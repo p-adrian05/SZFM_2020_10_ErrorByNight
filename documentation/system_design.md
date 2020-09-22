@@ -85,7 +85,11 @@ create table GameState (
 
 # 13. Telepítési terv
 
--
+Az alkalmazás eléréséhez, telepítéséhez és futtatásához az alábbi feltételek/lépések szükségesek:
+
+- Személyi számítógép Java JRE-vel ellátva
+- Internetelérés (Az program beszerzéséhez)
+- Webböngésző (Az program beszerzéséhez)
 
 # 14. Karbantartási terv
 
