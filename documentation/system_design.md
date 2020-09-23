@@ -24,7 +24,14 @@ a játék menete szerint.
 
 # 4. Üzleti folyamatok modellje
 
--
+A játékos(ok)at a programot megnyitva egyből a kezdőállásba állított játék fogadja, alapértelmezett játékosnevekkel. A játékállapot mellett több gomb is rendelkezésre áll, különböző funkciókat kínálva:
+- **Mentés:** Elmenti a játék jelenlegi állapotát, arésztvevő játékosok neveit és a mentés dátumát az adatbázisba.
+- **Játék mentések:** Megmutatja az összes elmentett játékot és a hozzájuk tartozó információkat. A lista rendezhető a különböző oszlopok alapján, továbbá két művelet hajtható végre az adott játék mentéssel:
+  - **Betöltés:** A kiválasztott mentés betöltése
+  - **Törlés:** A kiválasztott mentés törlése az adatbázisból. Ezután semmilyen módon nem lehet elérni a törölt mentést.
+- **Nevek megadása:** Az játékosnevek megváltoztatása, amelyek ki lesznek írva a soron következő játékos megállapítására. Továbbá segítenek azonosítani és megkülönböztetni a mentett játékokat a felhasználó számára.
+- **Új játék:** A játék alaphelyzetbe állítása. A neveket nem változtatja meg.
+- **Lépés:** A játéktér színesen jelölt mezőire (választható lépés) kattintva teheti meg a soron következő játékos a lépését. Ha nyerő lépést visz véghez az adott játékos, azt a program jelzi.
 
 # 5. Követelmények
 
