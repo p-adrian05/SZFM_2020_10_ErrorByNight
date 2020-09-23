@@ -3,7 +3,7 @@
 Felhasználóknak egy asztali alkalmazás biztosítása, amelyet akár két felhasználó is használhat felváltva
 a játék menete szerint.
 
-- Magyar nyelvű felhasználói felület létrehozása.
+- Magyar nyelvű felhasználói felület prezentálása.
 - A játék lokális két-játékos módjának megvalósítása.
 - Intuitív, bővebb leírást nem igénylő kezelői felület.
 - Egyszerű, modern megjelenés biztosítása, az egyszerű kezelés céljából.
@@ -13,6 +13,7 @@ a játék menete szerint.
 - Egy korábban elmentet játék állapotának kitörlése.
 - Egy adott játék állapot betöltése, ennek köszönhetően lehetőség van a játék folytatására az adott állapotból.
 - A játékos tájékoztatása a játék során a megtehető lépések helyeiről a táblán.
+- Platformfüggetlenség.
 
 
 
