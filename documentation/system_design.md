@@ -34,7 +34,14 @@ a játék menete szerint.
 
 # 5. Követelmények
 
--
+- Egy JavaFX asztali alkalmazás legyen.
+- Az alkalmazásnak támogatnia kell a magyar nyelvet.
+- Egy intuitív, részletes leírást nem igénylő, magyar nyelvű kezelői felület.
+- Egyszerű, modern megjelenés.
+- Biztosítson lehetőséget a játékállások elmentésére, betöltésére.
+- Legyen a játékosoknak lehetőségük már meglévő játszmák, játékállások törlésére.
+- A játékosoknak legyen lehetőségük megadni a játékosnevüket (A 2. pont alapján, minden magyar nyelvben előforduló karaktert el kell fogadnia).
+
 
 # 6. Funkcionális terv
 
