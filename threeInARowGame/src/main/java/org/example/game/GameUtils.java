@@ -1,5 +1,6 @@
 package org.example.game;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class GameUtils {
 
@@ -24,4 +25,22 @@ public class GameUtils {
         return countBlue == 4 && countRed == 4;
     }
 
-  
+  public static List<Direction> whereToMove(int row, int column, Piece[][] boardData){
+        List<Direction> directions = new ArrayList<>();
+
+        if(canMoveUp(row, column,boardData)){
+            directions.add(Direction.UP);
+        }
+        if(canMoveDown(row, column,boardData)){
+            directions.add(Direction.DOWN);
+        }
+        if(canMoveRight(row, column,boardData)){
+            directions.add(Direction.RIGHT);
+        }
+        if(canMoveLeft(row, column,boardData)){
+            directions.add(Direction.LEFT);
+        }
+
+        return directions;
+        
+}
