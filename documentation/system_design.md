@@ -85,7 +85,7 @@ A játékos(ok)at a programot megnyitva egyből a kezdőállásba állított já
 
 # 7. Fizikai környezet
 
--
+A projekt elkészítéséhez **IntelliJ IDEA** és **Gluon Scene Builder** szoftvereket használunk.
 
 # 9. Architekturális terv
 
