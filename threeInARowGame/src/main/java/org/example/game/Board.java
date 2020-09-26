@@ -5,7 +5,7 @@ public interface Board {
     /**
      * Switches the {@code turn} to that piece which will move next.
      */
-    void nextTurn();
+    Piece nextTurn();
     void swapPieces(int row, int column, Direction direction);
     Piece getTurn();
     Piece[][] getBoardState();

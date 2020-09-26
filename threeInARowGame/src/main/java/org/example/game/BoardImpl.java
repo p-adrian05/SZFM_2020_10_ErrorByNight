@@ -51,8 +51,13 @@ public class BoardImpl implements Board {
      * Switches the {@code turn} to that piece which will move next.
      */
     @Override
-    public void nextTurn() {
-        
+    public Piece nextTurn() {
+        if(this.turn == Piece.RED){
+            this.turn = Piece.BLUE;
+        } else{
+            this.turn = Piece.RED;
+        }
+        return this.turn;
     }
 
     @Override
