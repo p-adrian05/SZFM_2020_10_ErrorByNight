@@ -1,7 +1,5 @@
 package org.example.game;
 
-package org.example.game;
-
 
 public class GameUtils {
 
