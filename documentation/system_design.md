@@ -81,7 +81,7 @@ A játékos(ok)at a programot megnyitva egyből a kezdőállásba állított já
 
 # 6. Funkcionális terv
 
--
+ [Funkcionális specifikáció](https://github.com/p-adrian05/SZFM_2020_10_ErrorByNight/blob/master/documentation/functional_specification.md)
 
 # 7. Fizikai környezet
 
