@@ -62,6 +62,11 @@ public class BoardImpl implements Board {
 
     @Override
     public void swapPieces(int row, int column, Direction direction) {
-
+        Piece temp;
+        int newRow = row + direction.getDx();
+        int newColumn = column + direction.getDy();
+        temp = boardState[row][column];
+        boardState[row][column] = boardState[newRow][newColumn];
+        boardState[newRow][newColumn] = temp;
     }
 }
