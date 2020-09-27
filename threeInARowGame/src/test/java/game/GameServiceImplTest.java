@@ -46,4 +46,11 @@ class GameServiceImplTest {
         }
         return true;
     }
+
+    @Test
+    void setPlayersName() {
+        gameService.reset();
+        gameService.setPlayersName("Player1","Player2");
+        assertEquals("Player2",gameService.getTurnPlayerName());
+    }
 }
