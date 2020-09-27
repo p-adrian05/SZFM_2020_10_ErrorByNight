@@ -17,6 +17,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.List;
+import org.example.ThreeInARowApplication;
 
 
 @Slf4j
@@ -86,6 +87,18 @@ public class SavedStatesController {
 
     @FXML
     public void loadSelectedGame(){
+        ObservableList<GameState> selectedGame;
+        if(savedGamesTable.getItems().size()>0){
+            selectedGame = savedGamesTable.getSelectionModel().getSelectedItems();
+            log.debug("Selected game is {}", selectedGame.get(0));
+            if(gameService.loadState(selectedGame.get(0))){
+                try {
+                    ThreeInARowApplication.setRoot("game");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
     @FXML
     public void backBtnClicked(ActionEvent actionEvent) {
