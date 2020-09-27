@@ -52,4 +52,21 @@ public class GameServiceImpl implements GameService{
     public Piece getNextTurn(){
         return gameState.getTurn();
     }
+
+    @Override
+    public List<Direction> getPossibleMoves(int clickedRow,int clickedColumn){
+        return GameUtils.whereToMove(clickedRow, clickedColumn,gameState.getBoardState());
+    }
+    @Override
+    public void movePieceTo(int clickedRow, int clickedColumn, Direction direction)throws IllegalArgumentException{
+        List<Direction> directions = GameUtils.whereToMove(clickedRow, clickedColumn,gameState.getBoardState());
+        if(gameState.getBoardState()[clickedRow][clickedColumn]!=gameState.getTurn()){
+            throw new IllegalArgumentException();
+        }
+        if(!directions.contains(direction)){
+            throw new IllegalArgumentException();
+        }
+        gameState.swapPieces(clickedRow, clickedColumn, direction);
+        gameState.nextTurn();
+    }
 }
