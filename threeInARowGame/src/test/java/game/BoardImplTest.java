@@ -2,6 +2,7 @@ package game;
 
 import org.example.game.Board;
 import org.example.game.BoardImpl;
+import org.example.game.Direction;
 import org.example.game.Piece;
 import org.junit.jupiter.api.Test;
 
@@ -55,6 +56,25 @@ class BoardImplTest {
 
     @Test
     void swapPieces() {
+        Board board = new BoardImpl();
+        board.swapPieces(0, 1, Direction.DOWN);
+        assertTrue(equalsBoardState(board.getBoardState(), new Piece[][]{
+                {Piece.BLUE, Piece.EMPTY, Piece.BLUE, Piece.RED},
+                {Piece.EMPTY, Piece.RED, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.RED, Piece.BLUE, Piece.RED, Piece.BLUE}
+        }));
+    }
+    public boolean equalsBoardState(Piece[][] board1, Piece[][] board2){
+        for(int i=0;i<5;i++){
+            for(int j=0; j<4; j++){
+                if(!(board1[i][j] == board2[i][j])){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 
