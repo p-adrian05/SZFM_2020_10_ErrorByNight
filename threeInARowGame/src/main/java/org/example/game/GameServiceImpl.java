@@ -19,11 +19,28 @@ public class GameServiceImpl implements GameService{
         this.gameState = new BoardImpl();
     }
 
+    public static GameService getInstance(){
+        return gameService;
+    }
+
     @Override
     public String getWinnerName(){
         if(getTurnPlayerName().equals(playerBlue.getName())){
             return playerRed.getName();
         }
         return playerBlue.getName();
+    }
+
+    @Override
+    public boolean gameOver(){
+        return GameUtils.isEnd(gameState.getBoardState());
+    }
+    @Override
+    public Piece[][] getBoardData(){
+        return gameState.getBoardState();
+    }
+    @Override
+    public Piece getNextTurn(){
+        return gameState.getTurn();
     }
 }
