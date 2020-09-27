@@ -103,5 +103,10 @@ public class SavedStatesController {
     }
     @FXML
     public void backBtnClicked(ActionEvent actionEvent) {
+        try {
+            ThreeInARowApplication.setRoot("game");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
