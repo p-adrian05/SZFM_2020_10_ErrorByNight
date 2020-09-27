@@ -123,4 +123,24 @@ public class GameUtils {
         return false;
     }
     
+     public static int[][] makeValidBoard(String state){
+        int[][] board = new int[5][4];
+        for(int i=0;i<5;i++){
+            for(int j=0; j<4; j++){
+                board[i][j] = Character.getNumericValue(state.charAt(i*4+j));
+            }
+        }
+        return board;
+    }
+
+    public static String createStringFromGameState(Piece[][] boardData){
+        StringBuilder sb = new StringBuilder();
+        for(int i=0; i<5; i++){
+            for(int j=0; j<4; j++){
+                sb.append(boardData[i][j].getValue());
+            }
+        }
+        return sb.toString();
+    }
+    
 }
