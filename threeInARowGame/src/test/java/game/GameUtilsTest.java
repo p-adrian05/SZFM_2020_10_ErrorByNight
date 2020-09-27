@@ -252,4 +252,10 @@ class GameUtilsTest {
         }
         return true;
     }
+    
+    @Test
+    void createStringFromGameState() {
+       board = new BoardImpl();
+       assertEquals("21210000000000001212", GameUtils.createStringFromGameState(board.getBoardState()));
+    }
 }
