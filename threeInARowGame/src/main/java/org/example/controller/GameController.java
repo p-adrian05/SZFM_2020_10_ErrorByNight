@@ -181,7 +181,14 @@ public class GameController implements Initializable {
 
     @FXML
     public void continueButtonClicked()  {
-
+        if(redPlayerName.getText().isEmpty() || bluePlayerName.getText().isEmpty()){
+            errorLabel.setText("Enter your names!!");
+        } else{
+            gameService.setPlayersName(redPlayerName.getText(),bluePlayerName.getText());
+            addNamesPane.setDisable(true);
+            addNamesPane.setVisible(false);
+            setTurnLabel(gameService.getTurnPlayerName());
+        }
     }
 
     @Override
