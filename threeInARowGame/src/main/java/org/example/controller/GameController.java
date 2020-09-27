@@ -154,20 +154,41 @@ public class GameController implements Initializable {
 
     @FXML
     public void savedBtnClicked(ActionEvent actionEvent) {
+        if(gameService.saveGameState()){
+            saveBtn.setDisable(true);
+        }else{
+          addNamesBtnClicked();
+        }
     }
     @FXML
     public void savedGameStatesBtnClicked(ActionEvent actionEvent) {
+        try {
+            ThreeInARowApplication.setRoot("savedGames");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     public void newGameBtnClicked(ActionEvent actionEvent) {
+        gameService.reset();
+        initialize();
     }
     @FXML
     public void addNamesBtnClicked(ActionEvent actionEvent) {
+        addNamesPane.setDisable(false);
+        addNamesPane.setVisible(true);
     }
 
     @FXML
     public void continueButtonClicked()  {
-
+        if(redPlayerName.getText().isEmpty() || bluePlayerName.getText().isEmpty()){
+            errorLabel.setText("Enter your names!!");
+        } else{
+            gameService.setPlayersName(redPlayerName.getText(),bluePlayerName.getText());
+            addNamesPane.setDisable(true);
+            addNamesPane.setVisible(false);
+            setTurnLabel(gameService.getTurnPlayerName());
+        }
     }
 
     @Override
