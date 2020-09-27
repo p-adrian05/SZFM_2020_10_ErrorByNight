@@ -94,4 +94,29 @@ public class GameServiceImpl implements GameService{
             return false;
         }
     }
+
+    @Override
+    public void deleteGameStateByID(Long id) {
+        Optional<GameState> gameStateSaved = gameStateDao.find(id);
+        gameStateSaved.ifPresent(gameStateDao::remove);
+    }
+    
+    @Override
+    public boolean saveGameState(){
+        if(playerBlue.getName().equals(Piece.BLUE.name()) || playerRed.getName().equals(Piece.RED.name())){
+            return false;
+        }
+        String state = GameUtils.createStringFromGameState(this.gameState.getBoardState());
+        GameState savedGameState = GameState.builder()
+                .redPlayerName(playerRed.getName())
+                .bluePlayerName(playerBlue.getName())
+                .state(state)
+                .build();
+        try{
+            gameStateDao.persist(savedGameState);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
+    }
 }
