@@ -122,4 +122,9 @@ public class GameServiceImpl implements GameService{
             return false;
         }
     }
+    public void reset(){
+        this.playerBlue = new PlayerImpl(Piece.BLUE.name(),Piece.BLUE);
+        this.playerRed = new PlayerImpl(Piece.RED.name(),Piece.RED);
+        this.gameState = new BoardImpl();
+    }
 }

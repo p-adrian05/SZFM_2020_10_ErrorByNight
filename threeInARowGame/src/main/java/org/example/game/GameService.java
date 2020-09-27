@@ -30,4 +30,5 @@ public interface GameService {
 
     void deleteGameStateByID(Long id);
     boolean saveGameState();
+    void reset();
 }
