@@ -44,4 +44,32 @@ public class GameUtils {
         return directions;
 
     }
+    
+      public static boolean canMoveUp(int row, int column, Piece[][] boardData){
+        if(boardData[row][column]==Piece.EMPTY){
+            throw new IllegalArgumentException();
+        }
+        return (row-1)>=0 && (row-1)<5 && boardData[row-1][column]==Piece.EMPTY;
+    }
+
+    public static boolean canMoveDown(int row, int column, Piece[][] boardData){
+        if(boardData[row][column]==Piece.EMPTY){
+            throw new IllegalArgumentException();
+        }
+        return (row+1)>=0 && (row+1)<5 && boardData[row+1][column]==Piece.EMPTY;
+    }
+
+    public static boolean canMoveRight(int row, int column,Piece[][] boardData){
+        if(boardData[row][column]==Piece.EMPTY){
+            throw new IllegalArgumentException();
+        }
+        return (column+1)>=0 && (column+1)<4 && boardData[row][column+1]==Piece.EMPTY;
+    }
+
+    public static boolean canMoveLeft(int row, int column,Piece[][] boardData){
+        if(boardData[row][column]==Piece.EMPTY){
+            throw new IllegalArgumentException();
+        }
+        return (column-1)>=0 && (column-1)<4 && boardData[row][column-1]==Piece.EMPTY;
+    }
 }
