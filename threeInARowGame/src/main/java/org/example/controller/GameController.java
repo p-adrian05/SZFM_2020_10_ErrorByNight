@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -45,6 +46,7 @@ public class GameController {
     private List<Direction> possibleMoves;
     private boolean isHighlighted = false;
     private int clickedRow, clickedColumn;
+    private Image red, blue, empty, pmoves;
 
     @FXML
     public void initialize() {
@@ -111,6 +113,12 @@ public class GameController {
                 }
             }
         }
+    }
+    private void initImages(){
+        red = new Image(getClass().getResource("/images/red.png").toExternalForm());
+        blue = new Image(getClass().getResource("/images/blue.png").toExternalForm());
+        empty = new Image(getClass().getResource("/images/empty.png").toExternalForm());
+        pmoves = new Image(getClass().getResource("/images/possibleMove.png").toExternalForm());
     }
 
     @FXML
