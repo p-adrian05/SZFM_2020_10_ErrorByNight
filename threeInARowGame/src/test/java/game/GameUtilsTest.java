@@ -51,4 +51,20 @@ class GameUtilsTest {
         assertFalse(GameUtils.isValidBoard(board3));
         assertFalse(GameUtils.isValidBoard(board4));
     }
+
+    @Test
+    void whereToMove() {
+        List<Direction> directions = new ArrayList<>();
+        board = new BoardImpl();
+        directions.add(Direction.UP);
+        assertEquals(directions, GameUtils.whereToMove(4, 3,board.getBoardState()));
+
+        board.swapPieces(4,3, Direction.UP);
+        directions.add(Direction.DOWN); directions.add(Direction.LEFT);
+        assertEquals(directions, GameUtils.whereToMove(3, 3,board.getBoardState()));
+
+        directions = new ArrayList<>();
+        directions.add(Direction.DOWN);
+        assertNotEquals(directions, GameUtils.whereToMove(4, 1,board.getBoardState()));
+    }
 }
