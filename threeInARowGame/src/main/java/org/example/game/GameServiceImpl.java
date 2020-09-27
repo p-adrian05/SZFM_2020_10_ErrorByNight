@@ -79,4 +79,15 @@ public class GameServiceImpl implements GameService{
     public List<GameState> getAllSavedGameStates(){
         return gameStateDao.findAll();
     }
+
+    @Override
+    public boolean loadState(GameState savedGameState) {
+        try{
+            gameState = new BoardImpl(GameUtils.makeValidBoard(savedGameState.getState()));
+            setPlayersName(savedGameState.getRedPlayerName(), savedGameState.getBluePlayerName());
+            return true;
+        }catch (IllegalArgumentException e){
+            return false;
+        }
+    }
 }
