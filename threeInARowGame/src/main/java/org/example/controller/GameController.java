@@ -97,6 +97,30 @@ public class GameController {
         }
     }
 
+    private void highlightLegalMoves(MouseEvent mouseEvent){
+        Node source = (Node) mouseEvent.getSource();
+        clickedRow = GridPane.getRowIndex(source);
+        clickedColumn = GridPane.getColumnIndex(source);
+        log.debug("Cell ({}, {}) is pressed", clickedRow, clickedColumn);
+        Piece piece = gameService.getBoardData()[clickedRow][clickedColumn];
+        if(!piece.equals(Piece.EMPTY) && piece.equals(gameService.getNextTurn())) {
+            possibleMoves = gameService.getPossibleMoves(clickedRow,clickedColumn);
+            for (Direction direction : possibleMoves) {
+                ImageView view = (ImageView) gameGrid.getChildren().get((clickedRow + direction.getDx()) * 4 + clickedColumn + direction.getDy());
+                view.setImage(pmoves);
+            }
+            isHighlighted = true;
+        }
+    }
+
+    private void eraseHighlight(){
+        for (Direction direction : possibleMoves) {
+            ImageView view = (ImageView) gameGrid.getChildren().get((clickedRow + direction.getDx()) * 4 + clickedColumn + direction.getDy());
+            view.setImage(empty);
+        }
+        isHighlighted = false;
+    }
+
     public void displayGameState() {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 4; j++) {
@@ -116,11 +140,11 @@ public class GameController {
     }
     private void handleGameEnding(){
         String winnerName = gameService.getWinnerName();
-        turnLabel.setText(winnerName+" WON");
-        log.info("{} won.", winnerName);
+        turnLabel.setText(winnerName+" Nyertes");
+        log.info("{} nyert.", winnerName);
     }
     private void setTurnLabel(String playerName){
-        turnLabel.setText(playerName + "'S TURN");
+        turnLabel.setText(playerName + " következik");
     }
     private void initImages(){
         red = new Image(getClass().getResource("/images/red.png").toExternalForm());
