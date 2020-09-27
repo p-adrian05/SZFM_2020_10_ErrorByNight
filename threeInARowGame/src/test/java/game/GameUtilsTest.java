@@ -229,5 +229,17 @@ class GameUtilsTest {
         }));
     }
 
+    @Test
+    void makeValidBoard() {
+        int[][] board1 = {
+                {2, 1, 2, 1},
+                {0, 0, 0, 0},
+                {0, 0, 0, 0},
+                {0, 0, 0, 0},
+                {1, 2, 1, 2}
+        };
+        assertTrue(equalsBoard(board1,GameUtils.makeValidBoard("21210000000000001212")));
+        assertFalse(equalsBoard(board1,GameUtils.makeValidBoard("21201000000000001212")));
+    }
 
 }
