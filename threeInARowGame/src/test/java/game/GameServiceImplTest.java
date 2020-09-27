@@ -26,4 +26,13 @@ class GameServiceImplTest {
         gameService.movePieceTo(0,0,Direction.DOWN);
         assertEquals(Piece.RED.name(),gameService.getTurnPlayerName());
     }
+
+    @Test
+    void movePieceTo() {
+        gameService.reset();
+        gameService.movePieceTo(0,0,Direction.DOWN);
+        Board board = new BoardImpl();
+        board.swapPieces(0,0,Direction.DOWN);
+        assertTrue(equalsBoardState(gameService.getBoardData(),board.getBoardState()));
+    }
 }
