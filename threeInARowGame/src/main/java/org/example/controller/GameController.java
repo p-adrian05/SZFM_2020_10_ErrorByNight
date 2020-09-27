@@ -14,11 +14,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import lombok.extern.slf4j.Slf4j;
+import org.example.ThreeInARowApplication;
 import org.example.game.Direction;
 import org.example.game.GameService;
 import org.example.game.GameServiceImpl;
 import org.example.game.Piece;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -171,10 +173,10 @@ public class GameController implements Initializable {
     @FXML
     public void newGameBtnClicked(ActionEvent actionEvent) {
         gameService.reset();
-        initialize();
+        resetGameView();
     }
     @FXML
-    public void addNamesBtnClicked(ActionEvent actionEvent) {
+    public void addNamesBtnClicked() {
         addNamesPane.setDisable(false);
         addNamesPane.setVisible(true);
     }
@@ -191,10 +193,14 @@ public class GameController implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void resetGameView(){
         initImages();
         setTurnLabel(gameService.getTurnPlayerName());
         displayGameState();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        resetGameView();
     }
 }
