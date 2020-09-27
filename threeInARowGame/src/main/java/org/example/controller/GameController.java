@@ -114,6 +114,14 @@ public class GameController {
             }
         }
     }
+    private void handleGameEnding(){
+        String winnerName = gameService.getWinnerName();
+        turnLabel.setText(winnerName+" WON");
+        log.info("{} won.", winnerName);
+    }
+    private void setTurnLabel(String playerName){
+        turnLabel.setText(playerName + "'S TURN");
+    }
     private void initImages(){
         red = new Image(getClass().getResource("/images/red.png").toExternalForm());
         blue = new Image(getClass().getResource("/images/blue.png").toExternalForm());
