@@ -69,4 +69,14 @@ public class GameServiceImpl implements GameService{
         gameState.swapPieces(clickedRow, clickedColumn, direction);
         gameState.nextTurn();
     }
+
+    @Override
+    public void setPlayersName(String playerRed, String playerBlue){
+        this.playerBlue.setName(playerBlue);
+        this.playerRed.setName(playerRed);
+    }
+
+    public List<GameState> getAllSavedGameStates(){
+        return gameStateDao.findAll();
+    }
 }
