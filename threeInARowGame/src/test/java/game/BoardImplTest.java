@@ -1,6 +1,8 @@
 package game;
 
+import org.example.game.Board;
 import org.example.game.BoardImpl;
+import org.example.game.Piece;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -44,6 +46,11 @@ class BoardImplTest {
 
     @Test
     void nextTurn() {
+        Board board = new BoardImpl();
+        assertEquals(Piece.RED,board.nextTurn());
+        assertEquals(Piece.BLUE,board.nextTurn());
+        assertEquals(Piece.RED,board.nextTurn());
+        assertEquals(Piece.BLUE,board.nextTurn());
     }
 
     @Test
