@@ -53,4 +53,18 @@ class GameServiceImplTest {
         gameService.setPlayersName("Player1","Player2");
         assertEquals("Player2",gameService.getTurnPlayerName());
     }
+
+    @Test
+    void loadState() {
+        gameService.reset();
+        GameState gameState = GameState.builder()
+                .bluePlayerName("Player1")
+                .redPlayerName("Player2")
+                .created(null).id(999L).state("21210000000000001212").build();
+        gameService.loadState(gameState);
+        Board board = new BoardImpl();
+        assertTrue(equalsBoardState(gameService.getBoardData(),board.getBoardState()));
+        assertEquals(gameService.getTurnPlayerName(),"Player1");
+    }
+    
 }
