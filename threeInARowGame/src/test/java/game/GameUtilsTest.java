@@ -67,4 +67,77 @@ class GameUtilsTest {
         directions.add(Direction.DOWN);
         assertNotEquals(directions, GameUtils.whereToMove(4, 1,board.getBoardState()));
     }
+
+    @Test
+    void canMoveUp() {
+        assertTrue(GameUtils.canMoveUp(3,1,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.canMoveUp(0,3,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
+    @Test
+    void canMoveDown() {
+        assertTrue(GameUtils.canMoveDown(1,2,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.canMoveDown(1,3,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
+    @Test
+    void canMoveRight() {
+        assertTrue(GameUtils.canMoveRight(3,1,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.canMoveRight(0,3,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
+    @Test
+    void canMoveLeft() {
+        assertTrue(GameUtils.canMoveLeft(3,1,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.canMoveLeft(1,3,new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
 }
