@@ -72,4 +72,55 @@ public class GameUtils {
         }
         return (column-1)>=0 && (column-1)<4 && boardData[row][column-1]==Piece.EMPTY;
     }
+    
+        /**
+     * Checks whether the game is ended.
+     *
+     * @return {@code true} if one of the players has 3 piece in a row, column or diagonal,
+     * {@code false} otherwise
+     */
+    public static boolean isEnd(Piece[][] boardData) {
+        return isThreeInARow(boardData) || isThreeInAColumn(boardData) || isThreeInDiagonal(boardData);
+    }
+
+    public static boolean isThreeInARow(Piece[][] boardData){
+        for(Piece[] row:boardData){
+            for(int i=0; i<2; i++){
+                if(row[i]==row[i+1] && row[i]==row[i+2] && row[i]!=Piece.EMPTY){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean isThreeInAColumn(Piece[][] boardData){
+        for(int i=0; i<3; i++){
+            for(int j=0; j<4; j++){
+                if(boardData[i][j]==boardData[i+1][j] && boardData[i][j]==boardData[i+2][j] && boardData[i][j]!=Piece.EMPTY){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean isThreeInDiagonal(Piece[][] boardData){
+        for(int i=0; i<3; i++) {
+            for (int j = 0; j < 4; j++) {
+                if(j+2<4){
+                    if(boardData[i][j]==boardData[i+1][j+1] && boardData[i][j]==boardData[i+2][j+2] && boardData[i][j]!=Piece.EMPTY){
+                        return true;
+                    }
+                }
+                if(j-2>=0){
+                    if(boardData[i][j]==boardData[i+1][j-1] && boardData[i][j]==boardData[i+2][j-2] && boardData[i][j]!=Piece.EMPTY){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    
 }
