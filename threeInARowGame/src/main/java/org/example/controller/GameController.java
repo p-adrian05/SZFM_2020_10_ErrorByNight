@@ -162,6 +162,11 @@ public class GameController implements Initializable {
     }
     @FXML
     public void savedGameStatesBtnClicked(ActionEvent actionEvent) {
+        try {
+            ThreeInARowApplication.setRoot("savedGames");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     public void newGameBtnClicked(ActionEvent actionEvent) {
