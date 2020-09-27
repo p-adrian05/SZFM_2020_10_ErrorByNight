@@ -21,21 +21,23 @@
             <Insets bottom="5.0" top="5.0" />
          </BorderPane.margin>
          <children>
-            <Pane layoutX="255.0" layoutY="10.0" prefHeight="45.0" prefWidth="234.0" HBox.hgrow="ALWAYS" />
+            <Pane layoutX="255.0" layoutY="10.0" prefHeight="45.0" prefWidth="234.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#backBtnClicked" prefHeight="31.0" prefWidth="76.0" text="Vissza" />
+               </children></Pane>
             <Label alignment="CENTER" minWidth="280.0" text="Játék állások">
                <font>
                   <Font name="Droid Sans Mono" size="37.0" />
                </font>
             </Label>
-            <Pane prefHeight="45.0" prefWidth="117.0" HBox.hgrow="ALWAYS" />
-            <Button fx:id="deleteButton" contentDisplay="CENTER" minWidth="80.0" mnemonicParsing="false" onAction="#deleteSelectedGame" style="-fx-text-alignment: center;" text="Törlés" textAlignment="CENTER" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets right="5.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Button>
+            <Pane prefHeight="45.0" prefWidth="117.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="deleteButton" contentDisplay="CENTER" layoutX="40.0" layoutY="7.0" minWidth="80.0" mnemonicParsing="false" onAction="#deleteSelectedGame" style="-fx-text-alignment: center;" text="Törlés" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
             <Button fx:id="loadButton1" contentDisplay="CENTER" minWidth="75.0" mnemonicParsing="false" onAction="#loadSelectedGame" style="-fx-text-alignment: center;" text="Betöltés" textAlignment="CENTER">
                <font>
                   <Font size="15.0" />

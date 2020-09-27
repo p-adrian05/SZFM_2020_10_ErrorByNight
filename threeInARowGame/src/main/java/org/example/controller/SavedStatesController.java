@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -40,5 +41,7 @@ public class SavedStatesController {
     @FXML
     public void loadSelectedGame(){
     }
-
+    @FXML
+    public void backBtnClicked(ActionEvent actionEvent) {
+    }
 }
