@@ -140,4 +140,39 @@ class GameUtilsTest {
         }));
     }
 
+        @Test
+    void isEnd() {
+        assertFalse(GameUtils.isEnd(new BoardImpl().getBoardState()));
+        assertTrue(GameUtils.isEnd(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertTrue(GameUtils.isEnd(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertTrue(GameUtils.isEnd(new Piece[][] {
+                {Piece.EMPTY, Piece.RED, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.RED},
+                {Piece.EMPTY, Piece.BLUE,Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.isEnd(new Piece[][] {
+                {Piece.EMPTY, Piece.RED, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.EMPTY, Piece.BLUE, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.RED},
+                {Piece.EMPTY, Piece.BLUE,Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+
+    }
+
+
 }
