@@ -28,6 +28,7 @@ public class SavedStatesController {
 
     @FXML
     private void initialize(){
+        log.debug("Loading saved games...");
         displayList();
     }
 
