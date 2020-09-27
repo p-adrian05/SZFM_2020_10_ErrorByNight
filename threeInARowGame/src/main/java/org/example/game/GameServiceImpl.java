@@ -18,4 +18,12 @@ public class GameServiceImpl implements GameService{
         this.playerRed = new PlayerImpl(Piece.RED.name(),Piece.RED);
         this.gameState = new BoardImpl();
     }
+
+    @Override
+    public String getWinnerName(){
+        if(getTurnPlayerName().equals(playerBlue.getName())){
+            return playerRed.getName();
+        }
+        return playerBlue.getName();
+    }
 }
