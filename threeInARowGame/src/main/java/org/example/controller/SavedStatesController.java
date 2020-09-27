@@ -75,6 +75,13 @@ public class SavedStatesController {
 
     @FXML
     private void deleteSelectedGame() {
+        ObservableList<GameState> selectedGame;
+        if(savedGamesTable.getItems().size()>0){
+            selectedGame = savedGamesTable.getSelectionModel().getSelectedItems();
+            log.debug("Selected game is {}", selectedGame.get(0));
+            gameService.deleteGameStateByID(selectedGame.get(0).getId());
+            displayList();
+        }
     }
 
     @FXML
