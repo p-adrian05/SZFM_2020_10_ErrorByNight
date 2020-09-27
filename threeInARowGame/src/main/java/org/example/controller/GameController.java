@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -14,6 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.game.Direction;
 import org.example.game.GameService;
 import org.example.game.GameServiceImpl;
+import org.example.game.Piece;
 
 import java.util.List;
 
@@ -77,7 +79,38 @@ public class GameController {
         }
     }
 
-    private void displayGameState() {
+    private void move(Direction direction){
+        try {
+            gameService.movePieceTo(clickedRow, clickedColumn, direction);
+        }catch (IllegalArgumentException e){
+            log.error(e.getMessage());
+        }
+        displayGameState();
+        isHighlighted = false;
+        if(gameService.gameOver()){
+            handleGameEnding();
+        }else{
+            saveBtn.setDisable(false);
+            setTurnLabel(gameService.getTurnPlayerName());
+        }
+    }
+
+    public void displayGameState() {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 4; j++) {
+                ImageView view = (ImageView) gameGrid.getChildren().get(i * 4 + j);
+                if (view.getImage() != null) {
+                    log.trace("Image({}, {}) = {}", i, j, view.getImage().getUrl());
+                }
+                if(gameService.getBoardData()[i][j].equals(Piece.RED)) {
+                    view.setImage(red);
+                }else if(gameService.getBoardData()[i][j].equals(Piece.BLUE)){
+                    view.setImage(blue);
+                } else {
+                    view.setImage(empty);
+                }
+            }
+        }
     }
 
     @FXML
