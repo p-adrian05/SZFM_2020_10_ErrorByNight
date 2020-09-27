@@ -48,10 +48,12 @@ public class GameServiceImpl implements GameService{
     public boolean gameOver(){
         return GameUtils.isEnd(gameState.getBoardState());
     }
+    
     @Override
     public Piece[][] getBoardData(){
         return gameState.getBoardState();
     }
+
     @Override
     public Piece getNextTurn(){
         return gameState.getTurn();
@@ -61,6 +63,7 @@ public class GameServiceImpl implements GameService{
     public List<Direction> getPossibleMoves(int clickedRow,int clickedColumn){
         return GameUtils.whereToMove(clickedRow, clickedColumn,gameState.getBoardState());
     }
+
     @Override
     public void movePieceTo(int clickedRow, int clickedColumn, Direction direction)throws IllegalArgumentException{
         List<Direction> directions = GameUtils.whereToMove(clickedRow, clickedColumn,gameState.getBoardState());
@@ -100,7 +103,7 @@ public class GameServiceImpl implements GameService{
         Optional<GameState> gameStateSaved = gameStateDao.find(id);
         gameStateSaved.ifPresent(gameStateDao::remove);
     }
-    
+
     @Override
     public boolean saveGameState(){
         if(playerBlue.getName().equals(Piece.BLUE.name()) || playerRed.getName().equals(Piece.RED.name())){
