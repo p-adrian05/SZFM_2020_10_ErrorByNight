@@ -174,5 +174,59 @@ class GameUtilsTest {
 
     }
 
+ @Test
+    void isThreeInARow() {
+        assertTrue(GameUtils.isThreeInARow(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.RED,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.isThreeInARow(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.RED, Piece.BLUE,  Piece.RED,  Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
+    @Test
+    void isThreeInAColumn() {
+        assertTrue(GameUtils.isThreeInAColumn(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.isThreeInAColumn(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
+    @Test
+    void isThreeInDiagonal() {
+        assertTrue(GameUtils.isEnd(new Piece[][] {
+                {Piece.EMPTY, Piece.RED, Piece.EMPTY, Piece.BLUE},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.RED},
+                {Piece.EMPTY, Piece.BLUE,Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+        assertFalse(GameUtils.isThreeInAColumn(new Piece[][] {
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.BLUE},
+                {Piece.EMPTY, Piece.BLUE, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.RED, Piece.RED},
+                {Piece.BLUE, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY},
+                {Piece.EMPTY, Piece.EMPTY, Piece.EMPTY, Piece.EMPTY}
+        }));
+    }
+
 
 }
