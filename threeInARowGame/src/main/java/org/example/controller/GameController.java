@@ -175,6 +175,8 @@ public class GameController implements Initializable {
     }
     @FXML
     public void addNamesBtnClicked(ActionEvent actionEvent) {
+        addNamesPane.setDisable(false);
+        addNamesPane.setVisible(true);
     }
 
     @FXML
