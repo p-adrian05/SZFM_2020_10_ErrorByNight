@@ -170,6 +170,8 @@ public class GameController implements Initializable {
     }
     @FXML
     public void newGameBtnClicked(ActionEvent actionEvent) {
+        gameService.reset();
+        initialize();
     }
     @FXML
     public void addNamesBtnClicked(ActionEvent actionEvent) {
