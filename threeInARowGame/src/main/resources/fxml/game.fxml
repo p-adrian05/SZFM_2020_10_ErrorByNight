@@ -46,21 +46,21 @@
                    <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="10.0" layoutY="5.0" onMouseClicked="#handleMovement" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
                </children>
             </GridPane>
-             <Button fx:id="savedGameStates" layoutX="682.0" layoutY="77.0" mnemonicParsing="false" onAction="#savedGameStatesBtnClicked" text="Saved Games" />
-            <Button fx:id="saveBtn" layoutX="682.0" layoutY="129.0" mnemonicParsing="false" onAction="#savedBtnClicked" prefHeight="25.0" prefWidth="84.0" text="Save">
+             <Button fx:id="savedGameStates" layoutX="682.0" layoutY="77.0" mnemonicParsing="false" onAction="#savedGameStatesBtnClicked" text="Mentett állások" />
+            <Button fx:id="saveBtn" layoutX="690.0" layoutY="130.0" mnemonicParsing="false" onAction="#savedBtnClicked" prefHeight="25.0" prefWidth="84.0" text="Mentés">
        </Button>
             <Label fx:id="turnLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="800.0" text="">
                <font>
                   <Font size="53.0" />
                </font>
             </Label>
-      <Button fx:id="newGameBtn" layoutX="682.0" layoutY="184.0" mnemonicParsing="false" onAction="#newGameBtnClicked" prefHeight="25.0" prefWidth="84.0" text="New Game" />
-      <Button fx:id="addNamesBtn" layoutX="684.0" layoutY="227.0" mnemonicParsing="false" onAction="#addNamesBtnClicked" prefHeight="25.0" prefWidth="84.0" text="Add names" />
+      <Button fx:id="newGameBtn" layoutX="690.0" layoutY="184.0" mnemonicParsing="false" onAction="#newGameBtnClicked" prefHeight="25.0" prefWidth="84.0" text="Új játék" />
+      <Button fx:id="addNamesBtn" layoutX="674.0" layoutY="227.0" mnemonicParsing="false" onAction="#addNamesBtnClicked" prefHeight="25.0" prefWidth="116.0" text="Nevek megadása" />
       <Pane id="addNamesPane" fx:id="addNamesPane" disable="true" layoutX="213.0" layoutY="34.0" prefHeight="216.0" prefWidth="374.0" style="-fx-background-color: grey;" visible="false">
          <children>
             <Group />
-            <Pane layoutX="32.0" />
-                   <Label layoutX="18.0" layoutY="38.0" text="Please enter your names!">
+            <Pane layoutX="139.0" layoutY="1.0" prefHeight="26.0" prefWidth="90.0" />
+                   <Label layoutX="54.0" layoutY="29.0" text="Add meg a neveket!">
                        <font>
                            <Font name="Inconsolata Condensed Bold" size="30.0" />
                        </font>
@@ -69,19 +69,19 @@
                <children>
                              <TextField fx:id="redPlayerName" layoutX="10.0" />
                              <TextField fx:id="bluePlayerName" layoutX="10.0" layoutY="35.0" />
-                             <Button fx:id="continueButton" layoutX="21.0" layoutY="83.0" mnemonicParsing="false" onAction="#continueButtonClicked" prefHeight="32.0" prefWidth="116.0" style="-fx-background-radius: 8;" text="Continue">
+                             <Button fx:id="continueButton" layoutX="21.0" layoutY="83.0" mnemonicParsing="false" onAction="#continueButtonClicked" prefHeight="32.0" prefWidth="116.0" style="-fx-background-radius: 8;" text="Folytatás">
                                        <opaqueInsets>
                                      <Insets />
                                  </opaqueInsets>
                              </Button>
                </children>
             </Group>
-                       <Label layoutX="77.0" layoutY="83.0" text="RED" textFill="RED">
+                       <Label layoutX="76.0" layoutY="83.0" prefHeight="26.0" prefWidth="38.0" text="Piros" textFill="RED">
                            <font>
                                <Font size="17.0" />
                            </font>
                        </Label>
-                       <Label layoutX="77.0" layoutY="121.0" text="BLUE" textFill="BLUE">
+                       <Label layoutX="77.0" layoutY="121.0" text="Kék" textFill="BLUE">
                            <font>
                                <Font size="17.0" />
                            </font>

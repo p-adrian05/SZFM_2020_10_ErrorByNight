@@ -9,9 +9,9 @@
    <center>
       <TableView fx:id="savedGamesTable" prefHeight="422.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="redPlayer" prefWidth="208.0" text="Red player" />
-          <TableColumn fx:id="bluePlayer" prefWidth="171.0" text="Blue player" />
-            <TableColumn fx:id="created" prefWidth="244.0" text="Date" />
+          <TableColumn fx:id="redPlayer" prefWidth="208.0" text="Piros játékos" />
+          <TableColumn fx:id="bluePlayer" prefWidth="171.0" text="Kék játékos" />
+            <TableColumn fx:id="created" prefWidth="244.0" text="Dátum" />
         </columns>
       </TableView>
    </center>
@@ -22,13 +22,13 @@
          </BorderPane.margin>
          <children>
             <Pane layoutX="255.0" layoutY="10.0" prefHeight="45.0" prefWidth="234.0" HBox.hgrow="ALWAYS" />
-            <Label alignment="CENTER" minWidth="280.0" text="Saved Games">
+            <Label alignment="CENTER" minWidth="280.0" text="Játék állások">
                <font>
                   <Font name="Droid Sans Mono" size="37.0" />
                </font>
             </Label>
             <Pane prefHeight="45.0" prefWidth="117.0" HBox.hgrow="ALWAYS" />
-            <Button fx:id="deleteButton" contentDisplay="CENTER" minWidth="80.0" mnemonicParsing="false" onAction="#deleteSelectedGame" style="-fx-text-alignment: center;" text="DELETE" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+            <Button fx:id="deleteButton" contentDisplay="CENTER" minWidth="80.0" mnemonicParsing="false" onAction="#deleteSelectedGame" style="-fx-text-alignment: center;" text="Törlés" textAlignment="CENTER" HBox.hgrow="ALWAYS">
                <HBox.margin>
                   <Insets right="5.0" />
                </HBox.margin>
@@ -36,7 +36,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="loadButton1" contentDisplay="CENTER" minWidth="75.0" mnemonicParsing="false" onAction="#loadSelectedGame" style="-fx-text-alignment: center;" text="LOAD" textAlignment="CENTER">
+            <Button fx:id="loadButton1" contentDisplay="CENTER" minWidth="75.0" mnemonicParsing="false" onAction="#loadSelectedGame" style="-fx-text-alignment: center;" text="Betöltés" textAlignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
