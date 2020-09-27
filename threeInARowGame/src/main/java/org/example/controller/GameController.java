@@ -3,6 +3,7 @@ package org.example.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,11 +19,13 @@ import org.example.game.GameService;
 import org.example.game.GameServiceImpl;
 import org.example.game.Piece;
 
+import java.net.URL;
 import java.util.List;
+import java.util.ResourceBundle;
 
 
 @Slf4j
-public class GameController {
+public class GameController implements Initializable {
 
 
     @FXML
@@ -48,10 +51,6 @@ public class GameController {
     private int clickedRow, clickedColumn;
     private Image red, blue, empty, pmoves;
 
-    @FXML
-    public void initialize() {
-        displayGameState();
-    }
     @FXML
     public void handleMovement(MouseEvent mouseEvent){
         if(!gameService.gameOver()){
@@ -169,5 +168,12 @@ public class GameController {
     @FXML
     public void continueButtonClicked()  {
 
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        initImages();
+        setTurnLabel(gameService.getTurnPlayerName());
+        displayGameState();
     }
 }
