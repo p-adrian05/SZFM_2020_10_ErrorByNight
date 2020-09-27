@@ -229,5 +229,33 @@ class GameUtilsTest {
         }));
     }
 
+    @Test
+    void makeValidBoard() {
+        int[][] board1 = {
+                {2, 1, 2, 1},
+                {0, 0, 0, 0},
+                {0, 0, 0, 0},
+                {0, 0, 0, 0},
+                {1, 2, 1, 2}
+        };
+        assertTrue(equalsBoard(board1,GameUtils.makeValidBoard("21210000000000001212")));
+        assertFalse(equalsBoard(board1,GameUtils.makeValidBoard("21201000000000001212")));
+    }
 
+    public boolean equalsBoard(int[][] board1, int[][] board2){
+        for(int i=0;i<5;i++){
+            for(int j=0; j<4; j++){
+                if(!(board1[i][j] == board2[i][j])){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    
+    @Test
+    void createStringFromGameState() {
+       board = new BoardImpl();
+       assertEquals("21210000000000001212", GameUtils.createStringFromGameState(board.getBoardState()));
+    }
 }
