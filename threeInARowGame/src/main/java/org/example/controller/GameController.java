@@ -154,6 +154,11 @@ public class GameController implements Initializable {
 
     @FXML
     public void savedBtnClicked(ActionEvent actionEvent) {
+        if(gameService.saveGameState()){
+            saveBtn.setDisable(true);
+        }else{
+          addNamesBtnClicked();
+        }
     }
     @FXML
     public void savedGameStatesBtnClicked(ActionEvent actionEvent) {
