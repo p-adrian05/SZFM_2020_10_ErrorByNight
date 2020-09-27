@@ -18,4 +18,12 @@ class GameServiceImplTest {
         gameService.reset();
         assertEquals(Piece.RED.name(),gameService.getWinnerName());
     }
+
+    @Test
+    void getTurnPlayerName() {
+        gameService.reset();
+        assertEquals(Piece.BLUE.name(),gameService.getTurnPlayerName());
+        gameService.movePieceTo(0,0,Direction.DOWN);
+        assertEquals(Piece.RED.name(),gameService.getTurnPlayerName());
+    }
 }
