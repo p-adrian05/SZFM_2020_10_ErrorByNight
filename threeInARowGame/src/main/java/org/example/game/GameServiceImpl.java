@@ -32,6 +32,15 @@ public class GameServiceImpl implements GameService{
     }
 
     @Override
+    public String getTurnPlayerName(){
+        String turnPlayerName = playerBlue.getName();
+        if(this.gameState.getTurn().equals(Piece.RED)){
+            turnPlayerName = playerRed.getName();
+        }
+        return turnPlayerName;
+    }
+
+    @Override
     public boolean gameOver(){
         return GameUtils.isEnd(gameState.getBoardState());
     }
